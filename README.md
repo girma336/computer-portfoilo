@@ -1,10 +1,11 @@
-# mobile-portfolio project
-> Mobile-portfolio
+# computer-portfolio
+> Computer-portfolio
 
-# this project holds three main part
+# this project holds all part of computer portfolio
 - header
 - body
 - about my self
+- contact me
 
 ## Author 
 - Email [Girma Tarekegn] (https://email.com/tarekegngirma21@gmail.com)
