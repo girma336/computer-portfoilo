@@ -106,7 +106,7 @@ header {
   color: #344563;
 }
 
-.let-s h1 {
+.let-s h2 {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -185,7 +185,7 @@ header {
 article {
   display: flex;
   flex-direction: row;
-  width: 1156px;
+  max-width: 1156px;
   height: 497px;
   border-radius: 24px;
   background-color: #fff;
@@ -236,7 +236,7 @@ article {
   margin-left: 24px;
 }
 
-.back-description h1 {
+.back-description h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -318,7 +318,10 @@ article {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  background-color: #fff;
   color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 8px;
 }
 
 .button-m button:active {
@@ -412,19 +415,40 @@ article {
   font-weight: 500;
 }
 
+.language {
+  width: 624px;
+  border-bottom: 1px solid #dfe1e6;
+  margin-bottom: 40px;
+}
+
+.language h1,
+.language .up-down {
+  margin-bottom: -5px;
+}
+
 #span,
-.up-down {
+.language .up-down {
   display: flex;
   align-content: center;
   justify-content: end;
   margin-top: -40px;
-  margin-right: 16px;
+  margin-right: 26px;
   margin-bottom: 50px;
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 20px;
 }
 
-.up-down:hover {
+.language .up-down {
+  border-bottom: none;
+  margin-right: 6px;
+  margin-bottom: -10px;
+}
+
+.up-down:hover .up-down {
+  margin-bottom: 80px;
+}
+
+.language .up-down:hover {
   border-bottom: none;
 }
 
@@ -436,14 +460,14 @@ article {
 }
 
 li.language {
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .about-me .hovers li {
   display: block;
   align-items: center;
   justify-content: flex-start;
-  margin-top: -80px;
+  margin-top: -0;
   margin-left: -30px;
   height: 120px;
   width: 122px;
@@ -523,7 +547,7 @@ li.language {
   margin-left: auto;
 }
 
-.new-contact h1 {
+.new-contact h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
@@ -591,8 +615,6 @@ li.language {
 }
 
 .contact-me-form .contact-fo button {
-  position: absolute;
-  left: 45%;
   right: auto;
   width: 140px;
   height: 48px;
@@ -603,6 +625,9 @@ li.language {
   line-height: 0.03em;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #396df2;
+  border-radius: 8px;
 }
 
 .contact-me-form .contact-fo button:hover {
@@ -631,4 +656,444 @@ li.language {
 .logo-nav .nav-bar li:hover {
   background-color: #396df2;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .bars-mob {
+    position: absolute;
+    right: 10%;
+    width: 24px;
+    height: 24px;
+    background-image: url("images/Icon - Menu.png");
+    background-repeat: no-repeat;
+  }
+
+  .bars-mob:hover {
+    background-color: rgb(171, 171, 190);
+  }
+
+  .logo {
+    position: absolute;
+    left: 24px;
+    color: #6070ff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+  header {
+    width: 375px;
+    height: 674px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-1 {
+    position: absolute;
+    top: 49px;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+  }
+
+  .discription {
+    position: absolute;
+    top: 90px;
+    left: 24px;
+    right: 24px;
+  }
+
+  .discription h1 {
+    width: 237px;
+    font-style: normal;
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .discription p,
+  .main-2 p {
+    margin-top: -8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    font-style: normal;
+  }
+
+  .let-s h1 {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 500px;
+    color: #7f8cff;
+  }
+
+  .vector ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+
+  .vector a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 12px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .vector a:hover {
+    border: 1px solid #344563;
+  }
+
+  section {
+    background-color: #6b778c;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 337px;
+    height: 655px;
+    background-color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .image-1 {
+    background-image: url("images/image-1.png");
+    width: 295px;
+    height: 240px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-2 {
+    background-image: url("images/image-2.png");
+    width: 295px;
+    height: 240px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-3 {
+    background-image: url("images/image-3.png");
+    width: 295px;
+    height: 240px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-4 {
+    background-image: url("images/image-4.png");
+    width: 295px;
+    height: 240px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .all-image-pro {
+    display: none;
+  }
+
+  .back-description {
+    width: 327px;
+  }
+
+  .back-description h2 {
+    width: 200px;
+    height: auto;
+    color: #172b4d;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 44px;
+  }
+
+  .back-description .page-list li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6b778c;
+    margin-top: -12px;
+    margin-left: -10px;
+  }
+
+  .lists-of-frame {
+    width: 327px;
+    margin-left: -20px;
+    margin-top: 40px;
+  }
+
+  .page-list p {
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .main-part .nav-source li {
+    margin-right: -15px;
+  }
+
+  .language h1,
+  .lang h1,
+  .lag h1 {
+    display: flex;
+    align-items: center;
+    width: 237px;
+    height: 24px;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .language h1,
+  .language span,
+  #new-span {
+    margin-bottom: 20px;
+  }
+
+  #span,
+  .up-down {
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    margin-top: -40px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    width: 290px;
+  }
+
+  .language {
+    width: 298px;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .hovers ul {
+    margin-top: 50px;
+  }
+
+  .up-down {
+    position: absolute;
+    right: 190px;
+    border-bottom: none;
+  }
+
+  .lists-of-frame .hovers li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 66.75px;
+    width: 279px;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin-bottom: 2px;
+    margin-left: -15px;
+  }
+
+  .lists-of-frame .hovers li span {
+    margin-left: -5px;
+  }
+
+  .about-me {
+    width: 375px;
+    height: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-me .hovers li span {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: -90px;
+  }
+
+  .about-me-page {
+    width: 327px;
+    margin-left: 16px;
+  }
+
+  .hovers li p {
+    width: 217px;
+    height: 24px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding: 5px 5px 5px 0;
+    margin-top: 5px;
+  }
+
+  #new-span {
+    padding-left: -10px;
+  }
+
+  .hovers,
+  #new-span {
+    display: none;
+  }
+
+  .language:hover .hovers {
+    display: block;
+  }
+
+  .language:hover #new-span {
+    display: flex;
+  }
+
+  .language:hover #odd-span {
+    display: none;
+  }
+
+  .contact-me-form {
+    width: 375px;
+    height: 779px;
+    border-top-left-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .new-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+  }
+
+  .new-contact h2 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+    margin-left: -200px;
+  }
+
+  .contact-me-form div #new-info {
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px;
+    color: #ebebff;
+    text-align: center;
+    margin-right: 24px;
+    width: 327px;
+    margin-left: -170px;
+  }
+
+  .contact-fo {
+    position: absolute;
+    top: 350px;
+    margin-left: 16px;
+    margin-top: -40px;
+  }
+
+  .contact-form .contact-fo ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-fo ul {
+    margin-left: -16px;
+  }
+
+  .contact-fo input[type=text],
+  .contact-fo input[type=email] {
+    width: 327px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    padding-left: 16px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #172b4d;
+  }
+
+  .contact-fo li textarea {
+    width: 327px;
+    height: 179px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    padding: 15px 38px 15px 16px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #b3bac5;
+  }
+
+  .contact-fo button {
+    width: 140px;
+    height: 48px;
+    padding: 12px 16px 12px 16px;
+    color: #6070ff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 0.03em;
+    background: #fff;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    position: absolute;
+    left: 5%;
+  }
+
+  .contact-fo button:hover {
+    background: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  .contact-fo button:active {
+    background-color: #2230d2;
+    border-radius: 8px;
+    color: #fff;
+  }
+
+  .shape {
+    position: absolute;
+    bottom: 8px;
+    left: 120px;
+    width: 134px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #0d151e;
+  }
 }
