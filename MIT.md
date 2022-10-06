@@ -1,2 +1,1 @@
-GIRMA TAREKEGN 
-CopyRight @2022
+Copyright 2021, [Girma Tarekegn]
