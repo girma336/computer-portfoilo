@@ -663,6 +663,14 @@ li.language {
     display: none;
   }
 
+  .hole-div {
+    width: 375px;
+    height: auto;
+    border: 1px solid #0d151e;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .bars-mob {
     position: absolute;
     right: 10%;
@@ -759,18 +767,21 @@ li.language {
   .vector a:hover {
     border: 1px solid #344563;
   }
+
   .all-page-mode {
     width: 375px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .main-part {
     margin-top: 50px;
     padding-bottom: 80px;
     padding-top: -40px;
     background-color: #e5e5e5;
-    border:1px solid #0d151e;
+    border-right: 1px solid #0d151e;
   }
+
   article {
     display: flex;
     flex-direction: column;
@@ -863,19 +874,32 @@ li.language {
   .main-part .nav-source li {
     margin-right: -15px;
   }
+
   .about-me {
     width: 375px;
     height: 1125px;
-    margin-top: 0px;
-    border:1px solid;
+    margin-top: 0;
+    border: 1px solid;
     background-color: #fff;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .language h1,
+  .language span,
+  #new-span {
+    margin-bottom: 20px;
+  }
+
+  .hovers li span {
+    margin-left: 40px;
   }
 
   .about-me .hovers li span {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: -20px;
     height: 66.67px;
     width: 50px;
@@ -889,13 +913,11 @@ li.language {
   }
 
   .about-me-page {
- 
     margin-top: -60px;
     width: 315px;
     margin-left: 16px;
     margin-right: 20px;
   }
- 
 
   .language h1,
   .lang h1,
@@ -908,12 +930,6 @@ li.language {
     font-style: normal;
     line-height: 24px;
     font-weight: 500;
-    margin-bottom: 20px;
-  }
-
-  .language h1,
-  .language span,
-  #new-span {
     margin-bottom: 20px;
   }
 
@@ -938,9 +954,8 @@ li.language {
     margin-top: 50px;
     width: 303px;
   }
-  .hovers li span {
-    margin-left: 40px;
-  }
+
+
 
   .up-down {
     position: absolute;
@@ -966,7 +981,6 @@ li.language {
     margin-left: -5px;
   }
 
-  
   .hovers li p {
     width: 217px;
     height: 24px;
@@ -1007,7 +1021,8 @@ li.language {
     border-top-left-radius: 50px;
     margin-left: auto;
     margin-right: auto;
-    border:1px solid #0d151e;
+
+    /* border:1px solid #0d151e; */
   }
 
   .new-contact {
