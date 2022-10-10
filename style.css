@@ -700,6 +700,8 @@ li.language {
     height: 100%;
     background-image: url("images/background.png");
     background-repeat: no-repeat;
+    background-color: #e5e5e5;
+    border-top: none;
   }
 
   .discription {
@@ -757,11 +759,18 @@ li.language {
   .vector a:hover {
     border: 1px solid #344563;
   }
-
-  section {
-    background-color: #6b778c;
+  .all-page-mode {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  .main-part {
+    margin-top: 50px;
+    padding-bottom: 80px;
+    padding-top: -40px;
+    background-color: #e5e5e5;
+    border:1px solid #0d151e;
+  }
   article {
     display: flex;
     flex-direction: column;
@@ -854,6 +863,39 @@ li.language {
   .main-part .nav-source li {
     margin-right: -15px;
   }
+  .about-me {
+    width: 375px;
+    height: 1125px;
+    margin-top: 0px;
+    border:1px solid;
+    background-color: #fff;
+  }
+
+  .about-me .hovers li span {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: -20px;
+    height: 66.67px;
+    width: 50px;
+    padding-right: 20px;
+    justify-content: center;
+    background-color: #f7f7f9;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  .about-me-page {
+ 
+    margin-top: -60px;
+    width: 315px;
+    margin-left: 16px;
+    margin-right: 20px;
+  }
+ 
 
   .language h1,
   .lang h1,
@@ -894,11 +936,15 @@ li.language {
 
   .hovers ul {
     margin-top: 50px;
+    width: 303px;
+  }
+  .hovers li span {
+    margin-left: 40px;
   }
 
   .up-down {
     position: absolute;
-    right: 190px;
+    right: 208px;
     border-bottom: none;
   }
 
@@ -908,38 +954,19 @@ li.language {
     justify-content: center;
     margin-top: 10px;
     height: 66.75px;
-    width: 279px;
+    width: 250px;
     background-color: #f7f7f9;
     border-radius: 8px;
-    margin-right: 40px;
+    margin-right: 20px;
     margin-bottom: 2px;
-    margin-left: -15px;
+    margin-left: 15px;
   }
 
   .lists-of-frame .hovers li span {
     margin-left: -5px;
   }
 
-  .about-me {
-    width: 375px;
-    height: 1125px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .about-me .hovers li span {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: -90px;
-  }
-
-  .about-me-page {
-    width: 327px;
-    margin-left: 16px;
-  }
-
+  
   .hovers li p {
     width: 217px;
     height: 24px;
@@ -980,6 +1007,7 @@ li.language {
     border-top-left-radius: 50px;
     margin-left: auto;
     margin-right: auto;
+    border:1px solid #0d151e;
   }
 
   .new-contact {
