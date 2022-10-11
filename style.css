@@ -28,6 +28,8 @@ header {
 .logo {
   position: absolute;
   left: 150px;
+  transform: rotate(360deg);
+  transition: transform 4s;
 }
 
 .logo h1 {
@@ -202,6 +204,10 @@ article {
   margin: 24px 22px 24px 24px;
 }
 
+.scale-image:hover {
+  transform: scale(1.2);
+}
+
 .back-image-file {
   background-image: url(images/Snapshoot\ Portfolio.png);
   background-repeat: no-repeat;
@@ -250,8 +256,17 @@ article {
   align-items: center;
   float: left;
   gap: 38px;
-  margin-top: -30px;
+  margin-top: -20px;
   margin-left: -40px;
+  margin-bottom: 20px;
+}
+
+
+.back-description .page-list li:first-child {
+  list-style-type: none;
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .nav-source li {
@@ -278,13 +293,13 @@ article {
   margin-top: -12px;
 }
 
-.back-description .page-list p {
+/* .back-description .page-list p {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   color: #344563;
-}
+} */
 
 .back-description .uniqe-para {
   font-style: normal;
@@ -322,6 +337,8 @@ article {
   color: #396df2;
   border: 1px solid #396df2;
   border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 4s;
 }
 
 .button-m button:active {
@@ -955,11 +972,9 @@ li.language {
     width: 303px;
   }
 
-
-
   .up-down {
     position: absolute;
-    right: 208px;
+    right: 228px;
     border-bottom: none;
   }
 
@@ -974,11 +989,11 @@ li.language {
     border-radius: 8px;
     margin-right: 20px;
     margin-bottom: 2px;
-    margin-left: 15px;
+    margin-left: -15px;
   }
 
   .lists-of-frame .hovers li span {
-    margin-left: -5px;
+    margin-left: -15px;
   }
 
   .hovers li p {
