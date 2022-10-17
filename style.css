@@ -691,11 +691,12 @@ li.language {
     margin-right: auto;
     top: 0;
     width: 375px;
-    height: 812px;
-    z-index: 800;
+    height: 100vh;
+    z-index: 100;
     background: #6070ff;
     padding: 1em;
     color: #fff;
+    opacity:0.95;
   }
 
   #menu-bar {
