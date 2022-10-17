@@ -43,6 +43,7 @@ header {
 .nav-bar {
   position: absolute;
   right: 150px;
+  margin-top: -30px;
 }
 
 .nav-bar ul {
@@ -261,14 +262,6 @@ article {
   margin-bottom: 20px;
 }
 
-
-.back-description .page-list li:first-child {
-  list-style-type: none;
-  margin-left: 2px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .nav-source li {
   display: flex;
   align-items: center;
@@ -292,6 +285,40 @@ article {
   color: #6b778c;
   margin-top: -12px;
 }
+
+.about-me .lists-of-frame li {
+  list-style-type: none;
+}
+
+.about-me .hovers li {
+  display: block;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -0;
+  margin-left: -30px;
+  height: 120px;
+  width: 122px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin-right: 50px;
+  row-gap: 20px;
+}
+
+.contact-me-form .contact-fo ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+.back-description .page-list li:first-child {
+  list-style-type: none;
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
 
 /* .back-description .page-list p {
   font-style: normal;
@@ -409,10 +436,6 @@ article {
   height: 48px;
 }
 
-.about-me .lists-of-frame li {
-  list-style-type: none;
-}
-
 .language h1,
 .language span,
 #new-span {
@@ -478,20 +501,6 @@ article {
 
 li.language {
   margin-top: -30px;
-}
-
-.about-me .hovers li {
-  display: block;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: -0;
-  margin-left: -30px;
-  height: 120px;
-  width: 122px;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  margin-right: 50px;
-  row-gap: 20px;
 }
 
 .about-me .hovers li span {
@@ -590,12 +599,6 @@ li.language {
   margin-right: auto;
 }
 
-.contact-me-form .contact-fo ul li {
-  list-style-type: none;
-  margin-bottom: 20px;
-  margin-left: -30px;
-}
-
 .contact-me-form .contact-fo ul {
   margin-left: auto;
   margin-right: auto;
@@ -676,8 +679,101 @@ li.language {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-bar {
+  nav {
     display: none;
+  }
+
+  /* today */
+  nav.menu-btn {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    width: 375px;
+    height: 812px;
+    z-index: 800;
+    background: #6070ff;
+    padding: 1em;
+    color: #fff;
+  }
+
+  #menu-bar {
+    cursor: pointer;
+  }
+
+  #close-menu {
+    cursor: pointer;
+  }
+
+  nav #close-menu {
+    float: right;
+    margin-right: 24px;
+    margin-top: 10px;
+    z-index: 10000;
+    color: #fff;
+  }
+
+  nav.nav-bar .bar-main {
+    display: block;
+  }
+
+  .vector a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 12px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  nav.menu-btn ul li a {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 44px;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav.menu-btn .nav-main {
+    display: block;
+    margin-top: 100px;
+    width: 215px;
+    z-index: 1;
+  }
+
+  .back-description .page-list li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6b778c;
+    margin-top: -12px;
+    margin-left: -10px;
+  }
+
+  .main-part .nav-source li {
+    margin-right: -15px;
+  }
+
+  .lists-of-frame .hovers li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 66.75px;
+    width: 250px;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    margin-left: -15px;
+  }
+
+  nav.menu-btn .nav-main li {
+    margin-left: -40px;
   }
 
   .hole-div {
@@ -771,16 +867,6 @@ li.language {
     margin-top: 10px;
   }
 
-  .vector a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-right: 12px;
-    width: auto;
-    height: auto;
-    margin-top: 20px;
-  }
-
   .vector a:hover {
     border: 1px solid #344563;
   }
@@ -864,16 +950,6 @@ li.language {
     line-height: 44px;
   }
 
-  .back-description .page-list li {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #6b778c;
-    margin-top: -12px;
-    margin-left: -10px;
-  }
-
   .lists-of-frame {
     width: 327px;
     margin-left: -20px;
@@ -886,10 +962,6 @@ li.language {
     font-weight: 600;
     line-height: 16px;
     color: #344563;
-  }
-
-  .main-part .nav-source li {
-    margin-right: -15px;
   }
 
   .about-me {
@@ -974,22 +1046,8 @@ li.language {
 
   .up-down {
     position: absolute;
-    right: 228px;
+    right: 135px;
     border-bottom: none;
-  }
-
-  .lists-of-frame .hovers li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    height: 66.75px;
-    width: 250px;
-    background-color: #f7f7f9;
-    border-radius: 8px;
-    margin-right: 20px;
-    margin-bottom: 2px;
-    margin-left: -15px;
   }
 
   .lists-of-frame .hovers li span {
