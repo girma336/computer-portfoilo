@@ -148,7 +148,6 @@ header {
   width: auto;
   height: auto;
   border: 1px solid #505f79;
-  box-shadow: 1px #505f79;
 }
 
 .twitter {
@@ -853,7 +852,6 @@ li.language {
     font-size: 14px;
     font-style: normal;
     line-height: 24px;
-    font-weight: 500px;
     color: #7f8cff;
   }
 
