@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <meta name="viewport" content>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,14 +17,19 @@
             <div class="logo">
             <h1>My Logo</h1>
             </div>
-            <a href="#" class="bars-mob"></a>
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="#portfolio-1">portfolio</a></li>
-                    <li><a href="#about-1">about</a></li>
-                    <li><a href="#contact-1">contact</a></li>
+            <img src="icon-bar.svg" class="bars-mob" id="menu-bar" alt="">
+            <!-- <a href="#" class="bars-mob" id="menu-bar"></a> -->
+            <nav>
+                <img class="bar-new" id="close-menu" src="images/close-menu.svg" alt="">
+              <div class="nav-bar bar-new">
+               
+                <ul class="nav-main">
+                    <li><a id="portifolio-2" href="#portfolio-1">Portfolio</a></li>
+                    <li><a id="about-2" href="#about-1">About</a></li>
+                    <li><a id="contact-2" href="#contact-1">Contact</a></li>
                 </ul>
-            </div>
+               </div>
+            </nav>
         </div>
         <div class="container-1">
             <div class="discription">
@@ -230,5 +237,6 @@
             <div class="shape"></div>
     </section>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
