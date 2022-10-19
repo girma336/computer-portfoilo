@@ -9,6 +9,10 @@
   src: url(./Poppins-Regular.ttf);
 }
 
+.bars-mob {
+  display: none;
+}
+
 body {
   max-width: 1440px;
   background-color: #e5e5e5;
