@@ -28,7 +28,7 @@ body {
   z-index: 1;
   left: 0;
   top: 0;
-  height: 100%;
+  max-height: 100%;
   width: 100%;
   overflow: auto;
   background: #c1c7d0;
@@ -40,8 +40,8 @@ body {
 
 .pop-up-wrap {
   background-color: #fff;
-  width: 100%;
-  height: auto;
+  max-width: 1156px;
+  max-height: 1163px;
   margin: 1rem;
   border-radius: 10px;
   padding: 0 1rem 1rem;
@@ -343,7 +343,9 @@ header {
 }
 
 /* popover */
-
+.popover-all {
+  display: none;
+}
 
 /* main patr of page */
 
@@ -548,10 +550,6 @@ article {
 }
 
 .section-phone {
-  display: none;
-}
-
-.popover-all {
   display: none;
 }
 
