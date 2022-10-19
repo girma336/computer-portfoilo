@@ -8,7 +8,7 @@ const nav = document.querySelector('nav');
 // popover project 
 // const btn_button = document.getElementById('btn-button');
 const btn_button = document.querySelector('.btn')
-const div = document.querySelector('.popover-all');
+// const div = document.querySelector('.popover-all');
 const exitPopover = document.getElementById('close-popover');
 
 btn_button.addEventListener('click', () =>{
@@ -24,7 +24,7 @@ function display() {
 
 exitBtn.addEventListener('click', display);
 aboutBtn.addEventListener('click', display);
-PortfolioBtn.addEventListener('click', display);
+// PortfolioBtn.addEventListener('click', display);
 contactBtn.addEventListener('click', display);
 
 function popover() {
