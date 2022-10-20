@@ -13,7 +13,7 @@
 
 ## Screenshot
 
-![mobile-setup-portfolio](images-desk/screenshot.png)
+![mobile-setup-portfolio](images-desk/*.png)
 
 ## Go Live 
 https://girma336.github.io/Portfolio/
