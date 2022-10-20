@@ -126,3 +126,21 @@ const dataPopover = [
 		})
 	  })
 	  
+	//   submit the form if an email will be lower case
+	const submitForm = document.querySelector('.form-class');
+
+	submitForm.addEventListener('submit', e =>{
+		e.preventDefault();
+		const email = document.getElementById('mail').value.trim();
+	    const megForError = document.querySelector('.if-false');
+		// email = email.value;
+		const Regx =  /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+		
+		if( Regx.test(email) === true){
+			submitForm.submit();
+			submitForm.reset();
+		}
+		else {
+			document.querySelector('.if-false').textContent = 'Your Email Should be LowerCase letter';
+		}
+	});
